@@ -38,7 +38,7 @@ const [emailList, setEmailList] = useState([])
   function send()
   {
     setStatus(true)
-    axios.post("https://bulkmail-back-api.onrender.com/sendmail",{msg, emailList})
+    axios.post("https://api-bulkmail-back.onrender.com/sendmail",{msg, emailList})
     .then(function(data)
   {
     if(data.data === true)
